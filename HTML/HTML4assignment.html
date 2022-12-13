@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Assignment 4</title>
+    <style>
+      td {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 6vw;
+      "
+    >
+      Registration Form
+    </h1>
+    <form
+      action="login.html"
+      style="
+        background-color: black;
+        color: pink;
+        max-width: fit-content;
+        margin: 0 auto;
+      "
+    >
+      <table>
+        <tr style="background-color: rgb(219, 123, 139); color: white">
+          <th colspan="2">Sign Up</th>
+        </tr>
+        <!--First Name-->
+        <tr>
+          <td>
+            <label for="firstName">First Name</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+          </td>
+        </tr>
+        <!--Last Name-->
+        <tr>
+          <td>
+            <label for="lastName">Last Name</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+          </td>
+        </tr>
+        <!--DOB-->
+        <tr>
+          <td>
+            <label for="dob">Date of Birth</label>
+          </td>
+          <td>
+            <input type="date" name="dob" required />
+          </td>
+        </tr>
+        <!--Gender-->
+        <tr>
+          <td>
+            <p>Gender</p>
+          </td>
+          <td>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" />
+          </td>
+        </tr>
+        <!--Country-->
+        <tr>
+          <td>
+            <label for="country">Country</label>
+          </td>
+          <td>
+            <select name="country" id="country">
+              <option value="" disabled selected>Select country</option>
+              <option value="england">England</option>
+              <option value="ireland">Ireland</option>
+              <option value="scotland">Scotland</option>
+              <option value="wales">Wales</option>
+            </select>
+          </td>
+        </tr>
+        <!--Email-->
+        <tr>
+          <td>
+            <label for="email">Email</label>
+          </td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              placeholder="example@hoohle.com"
+              required
+            />
+          </td>
+        </tr>
+        <!--Phone-->
+        <tr>
+          <td>
+            <label for="phone">Phone</label>
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="phone"
+              pattern="[0-9]{11}"
+              placeholder="0800808088"
+            />
+          </td>
+        </tr>
+        <!--Password-->
+        <tr>
+          <td>
+            <label for="password">Password</label>
+          </td>
+          <td>
+            <input type="password" name="password" />
+          </td>
+        </tr>
+        <!--Confirm Password-->
+        <tr>
+          <td>
+            <label for="confpassword">Confirm Password</label>
+          </td>
+          <td>
+            <input type="password" name="confpassword" />
+          </td>
+        </tr>
+        <!--Agree to terms of use-->
+        <tr>
+          <td colspan="2">
+            <label for="consent">I agree to Terms of use</label>
+            <input
+              type="checkbox"
+              id="consent"
+              name="consent"
+              value="agreed"
+              required
+            />
+          </td>
+        </tr>
+        <!--Buttons-->
+        <tr style="text-align: right">
+          <td colspan="2" style="background-color: rgb(219, 123, 139)">
+            <input
+              type="submit"
+              style="
+                background-color: rgb(140, 199, 140);
+                border: 1px solid rgb(140, 199, 140);
+              "
+            />
+            <input
+              type="reset"
+              style="border: 1px solid rgb(241, 4, 4); color: red"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

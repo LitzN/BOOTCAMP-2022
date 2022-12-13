@@ -1,0 +1,17 @@
+#mainp{
+    color:rgb(155, 235, 235);
+    font-variant: small-caps;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+h1{
+    background-color:darkslateblue;
+    color:snow;
+    text-align: center;
+    font-family:'Rubik Vinyl', cursive;
+}
