@@ -5,34 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML - Assignment 4</title>
+    <!-- CSS -->
     <style>
-      td {
-        padding: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1
-      style="
+      h1 {
         text-align: center;
         padding-top: 30px;
         padding-bottom: 30px;
         font-size: 6vw;
-      "
-    >
-      Registration Form
-    </h1>
-    <form
-      action="login.html"
-      style="
+      }
+
+      td {
+        padding: 5px;
+      }
+
+      form {
         background-color: black;
         color: pink;
         max-width: fit-content;
         margin: 0 auto;
-      "
-    >
+        padding: 10px 15px;
+        border-radius: 25px;
+      }
+
+      .signs {
+        background-color: rgb(219, 123, 139);
+        color: white;
+        border-radius: 20px;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .submit-btn {
+        background-color: rgb(140, 199, 140);
+        border: 1px solid rgb(140, 199, 140);
+      }
+
+      .submit-btn:active {
+        background-color: black;
+        color: rgb(140, 199, 140);
+      }
+
+      .reset-btn {
+        border: 1px solid rgb(241, 4, 4);
+        color: red;
+      }
+
+      .reset-btn:active {
+        background-color: red;
+        color: white;
+      }
+
+      .reset-btn:visited,
+      .submit-btn:visited {
+        background-color: rgb(189, 189, 189);
+      }
+
+      input {
+        color: blueviolet;
+        border: 2px solid pink;
+        border-radius: 10px;
+      }
+
+      .reset-btn:hover,
+      .submit-btn:hover {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="login.html">
       <table>
-        <tr style="background-color: rgb(219, 123, 139); color: white">
+        <tr class="signs">
           <th colspan="2">Sign Up</th>
         </tr>
         <!--First Name-->
@@ -159,19 +205,10 @@
           </td>
         </tr>
         <!--Buttons-->
-        <tr style="text-align: right">
-          <td colspan="2" style="background-color: rgb(219, 123, 139)">
-            <input
-              type="submit"
-              style="
-                background-color: rgb(140, 199, 140);
-                border: 1px solid rgb(140, 199, 140);
-              "
-            />
-            <input
-              type="reset"
-              style="border: 1px solid rgb(241, 4, 4); color: red"
-            />
+        <tr class="signs text-right">
+          <td colspan="2">
+            <input type="submit" class="submit-btn" />
+            <input type="reset" class="reset-btn" />
           </td>
         </tr>
       </table>
