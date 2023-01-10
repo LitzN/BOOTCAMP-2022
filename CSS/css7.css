@@ -160,3 +160,16 @@ a:hover{
     float:right;
     margin-right:2rem;
 }
+
+.flexbox{
+    display:flex;
+    min-height:100%;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin-top:2rem;
+}
+
+.gallery-pic{
+    width:15rem;
+    height:10rem;
+}
