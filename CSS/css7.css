@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Pacifico&display=swap');
+:root{
+    --titles-font: 'Pacifico', cursive;
+}
+
+.font{
+    font-family: var(--titles-font);
+}
+
+.header{
+    grid-area:header;
+    align-content:center;
+}
+
+.menu{
+    grid-area:menu;
+    background-color: black;
+}
+
+a{
+    text-decoration:none;
+    font-weight:bolder;
+    font-size:1.2rem;
+    color:white;
+}
+
+.menu a{
+    font-family:var(--titles-font);
+    padding: 0 2rem 0 2rem;
+}
+
+a:hover{
+    color:pink;
+}
+
+.side-bar{
+    grid-area:side;
+    border:solid 3px black;
+    overflow-y:scroll;
+}
+
+.side-bar img{
+    width: 90%;
+    height:40%;
+}
+
+.side-bar p:nth-of-type(2){
+    color:green;
+}
+
+.side-bar p:last-of-type{
+    font-size:0.8rem;
+    padding-bottom:1.5rem;
+}
+
+.content{
+    grid-area:content;
+}
+
+.footer{
+    grid-area:footer;
+    background-color:black;
+    color:white;
+}
+
+.foot{
+    margin-top:0.3rem;
+}
+.foot-socials{
+    float:right;
+    padding-right:1rem;
+}
+
+.foot-contact{
+    float:left;
+    padding-left:1rem;
+}
+
+.foot-contact p {
+    display:inline-block;
+    margin:0;
+}
+
+.grid-container{
+    font-family:'Libre Baskerville', serif;
+    min-height:100vh;
+    display:grid;
+    text-align:center;
+    grid-template-columns:auto auto auto auto;
+    grid-template-rows:15vh 5vh 75vh 5vh;
+    grid-template-areas:
+    'header header header header'
+    'menu menu menu menu'
+    'side content content content'
+    'side footer footer footer'
+}
+.content{
+    background-color:pink;
+}
+
+.header p{
+    font-family:var(--titles-font);
+    font-size:3rem;
+    display:inline-block;
+    margin:0;
+}
+.logo{
+    background-image:url(https://cdn.pixabay.com/photo/2020/06/17/12/54/coffee-5309385_1280.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    width:3rem;
+    height:3rem;
+    padding-top:1.5rem;
+    display:inline-block;
+}
+.logo1{
+    padding-left:3rem;
+    float:left;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.logo2{
+    float:right;
+    padding-right:3rem;
+}
+
+.content p:first-child{
+    font-size:1.5rem;
+}
+
+.intro{
+    padding:0 2rem 0 2rem;
+}
+
+.reviews{
+    margin:2rem 0 2rem 0;
+}
+.reviews p{
+    display:inline;
+    clear:left;
+}
+
+.review-img{
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:4rem;
+    width:4rem;
+    border-radius:25px;
+}
+
+.michael{
+    background-image:url(https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png);
+    float:left;
+    margin-left:2rem;
+}
+
+.dwight{
+    background-image:url(https://www.myany.city/sites/default/files/styles/scaled_cropped_medium__260x260/public/field/image/node-related-images/sample-dwight-k-schrute.jpg?itok=8TfRscbA);
+    float:right;
+    margin-right:2rem;
+}
